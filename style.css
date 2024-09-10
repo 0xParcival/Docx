@@ -1,0 +1,213 @@
+
+
+/* -------------------------------/////GENRAL CSS(homePage or indexPage)//////----------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* @font-face {
+    font-family: 'Minecraft';
+    src: url('./assets/Minecraft.ttf') format('ttf');  
+    font-weight: normal;
+    font-style: normal;
+} */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    margin: 0 5px;
+}
+/* ----------------------------------------/////HEADER///////-------------------------------------- */
+.header-content {
+
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #245520;
+    height: 9%;
+
+}
+
+.header-title {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* ----------------------------------//////Nabgation////-------------------------------------- */
+.nav-left {
+    position: fixed;
+    top: 9%;
+    list-style-type: none;
+    width: 20%;
+    background-color: #23643a;
+    height: 100%;
+}
+
+.nav-left-list {
+    list-style-type: none;
+    
+}
+
+.nav-left-list>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-left-list>li {
+    padding: 5px 0px 5px 5px;
+}
+
+.nav-left-sub-list>li {
+    padding-left: 10px;
+    padding: 5px 0px 5px 5px;
+    list-style-type: none;
+}
+
+.nav-left-sub-list>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------------------------////Main Content////----------------------------------------- */
+.home-main-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    left: 20%;
+    height: 87%;
+}
+.home-section-content {
+    background-color: #0c460c;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.main-content{
+   margin-left: 20%;
+   height: 100%;
+   
+}
+.section-content{
+  margin: 1%;
+}
+.content-list{
+    margin-top:1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.content-list>li{
+    margin-top: 0.3rem;
+}
+
+.current-tab{
+   background: #12372A;
+   padding-left:0px;
+}
+/* ----------------------------------////NOTES////------------------------------------ */
+.note{
+    width: auto;
+    background-color: rgb(92, 139, 100);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+.note-content{
+    margin-left: 1.5rem;
+    margin-top:0.3rem ;
+
+    
+}
+/* ----------------------------------------////Code snipet////------------------------------- */
+.code-snipet{
+    display: flex;
+    
+
+}
+.syntax{
+    margin-top: 1rem;
+    width: auto;
+
+}
+.syntax pre{ 
+    border-radius:10px;
+    border: 1px solid black;
+    
+}
+.code-output{
+    margin-top: 1rem;
+}
+
+/* ---------------------------------------//////FOOTER//////--------------------------------------------------- */
+.footer-content {
+    /* font-family:'Minecraft'; */
+    /* position: fixed; */
+    width: 100%;
+    text-align: center;
+    height: 4%;
+    background-color: rgb(11, 43, 32);
+}
+.footer-content>p{
+    padding-top:5px ;
+}
+.footer-content>p>a {
+    background-image: repeating-linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 102, 0), rgb(255, 255, 0), rgb(0, 128, 0), rgb(102, 102, 255), rgb(149, 0, 255), rgb(249, 210, 249), rgb(255, 0, 0), rgb(255, 102, 0), rgb(255, 255, 0), rgb(0, 128, 0), rgb(102, 102, 255), rgb(149, 0, 255), rgb(249, 210, 249));
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 70s ease-in-out 0s infinite normal none running rainbow;
+}
+
+
+.nav-left-list li:hover {
+    background-color: #057049;
+}
+
+.nav-left-list li li:hover {
+    background-color: #12372A;
+ 
+}
+
+.nav-left-list li:active {
+    background-color: #057049;
+}
+
+.nav-left-list li li:active {
+    background-color: #057049;
+}
+
+
+
+@keyframes rainbow {
+    0% {
+        background-position: 100% 50%;
+    }
+    25% {
+        background-position: 0% 20%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 0% 60%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
